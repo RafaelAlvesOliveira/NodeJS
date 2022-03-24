@@ -1,0 +1,31 @@
+{
+  "cSpell.words": [
+    "aprovado",
+    "arquivo",
+    "const",
+    "contagem",
+    "conteúdo",
+    "está",
+    "Estudos",
+    "externo",
+    "externos",
+    "green",
+    "impressões",
+    "interno",
+    "mais",
+    "modulos",
+    "Parabéns",
+    "Rafael",
+    "sobre",
+    "texto",
+    "Você"
+  ],
+  "cSpell.customDictionaries": {
+    "custom-dictionary-workspace": {
+      "name": "custom-dictionary-workspace",
+      "path": "${workspaceFolder:NODEJSZM}/.cspell/custom-dictionary-workspace.txt",
+      "addWords": true,
+      "scope": "workspace"
+    }
+  }
+}
