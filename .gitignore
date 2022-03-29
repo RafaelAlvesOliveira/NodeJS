@@ -141,4 +141,8 @@ dist
 # SvelteKit build / generate output
 .svelte-kit
 
+# Dicionario
+.cspell
+.json
+
 # End of https://www.toptal.com/developers/gitig
