@@ -1,5 +1,5 @@
 {
-  "name": "3_resgatar_dados",
+  "name": "6_atualizacao_de_dados",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,6 +13,7 @@
   "dependencies": {
     "express": "^4.17.3",
     "express-handlebars": "^6.0.5",
+    "handlebars": "^4.7.7",
     "mysql": "^2.18.1",
     "nodemon": "^2.0.15"
   }
