@@ -52,7 +52,6 @@ h1 {
   padding: 5px;
 }
 
-/* Users */
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -62,16 +61,18 @@ h1 {
 }
 
 .container .item {
-  border: 1px solid #CCC;
+  border: 1px solid #ccc;
   border-radius: 5px;
   padding: 20px;
   flex: 1 1 29%;
   max-width: 29%;
-  height: 95px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
-.item h2,
-.item p {
+.container .item h2,
+.container .item p {
   margin-bottom: 0.8em;
 }
 
@@ -82,10 +83,10 @@ h1 {
 
 .actions a,
 .actions input {
-  border: 1px solid #BBB;
+  border: 1px solid #bbb;
   border-radius: 5px;
   text-decoration: none;
-  background-color: #FFF;
+  background-color: #fff;
   padding: 5px;
   font-size: 15px;
   color: #000;
@@ -95,7 +96,6 @@ h1 {
 .actions .details-btn {
   border-color: #004085;
   color: #004085;
-  margin-right: 10px;
 }
 
 .actions .delete-btn {
@@ -103,14 +103,11 @@ h1 {
   color: #721c24;
 }
 
-/* Address */
 .address-container {
   max-width: 1000px;
   margin: 1em auto;
   padding-top: 1em;
-  padding-top: 1em;
-  padding-bottom: 200px;
-  border-top: 1px solid #CCC;
+  border-top: 1px solid #ccc;
 }
 
 .address-container h2 {
@@ -124,5 +121,17 @@ h1 {
 .address-list {
   margin-top: 1em;
   padding-top: 1em;
-  border-top: 1px solid #CCC;
+  border-top: 1px solid #ccc;
+  padding-bottom: 200px;
+}
+
+.address-list div {
+  display: flex;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #ddd;
+}
+
+.address-list form {
+  margin-left: 1em;
 }

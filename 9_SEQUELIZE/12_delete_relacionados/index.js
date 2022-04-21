@@ -35,12 +35,9 @@ app.get('/users/edit/:id', async (req, res) => {
     const user = await User.findOne({ include: Address, where: { id: id } })
     
     res.render('useredit', { user: user.get({ plain: true }) })  
-  } catch (error) {
-    
+  } catch (error) {    
     console.log(error)
-
-  }
-    
+  }    
 })
 
 app.post('/users/update', async (req, res) => {
@@ -70,7 +67,7 @@ app.post('/users/update', async (req, res) => {
 
 app.get('/', async (req, res) => {
 
-  const user = await User.findAll({raw: true})
+  const user = await User.findAll({ raw: true })
 
   console.log(user)
 
@@ -126,6 +123,16 @@ app.post('/address/create', async (req, res) => {
   res.redirect(`/users/edit/${UserId}`)
 })
 
+app.post('/address/delete', async (req, res) => {
+  const UserId = req.body.UserId
+  const id = req.body.id
+
+  await Address.destroy({
+    where: { id: id },
+  })
+  res.redirect(`/`)
+})
+
 conn
   .sync()
   // .sync({ force: true})
@@ -133,3 +140,4 @@ conn
   app.listen(3000)
 })
 .catch((err) => console.log(err))
+

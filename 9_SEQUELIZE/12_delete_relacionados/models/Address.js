@@ -5,18 +5,16 @@ const db = require('../db/conn')
 const User = require('./User')
 
 const Address = db.define('Address', {
-
   street: {
     type: DataTypes.STRING,
-    allowNull: false,    
+    allowNull: false,
   },
   number: {
-    type: DataTypes.STRING,    
+    type: DataTypes.STRING,
   },
   city: {
     type: DataTypes.STRING,
-    allowNull: false,    
-  }
+  },
 })
 
 User.hasMany(Address)
