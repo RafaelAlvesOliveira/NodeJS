@@ -22,7 +22,7 @@ app.use(express.json())
 
 app.use(express.static('public'))
 
-app.use('/tasks', tasksRoutes)
+app.use('/tasks', taskRoutes)
 
 conn.sync()
   .then(() => {
